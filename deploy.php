@@ -11,7 +11,7 @@ host('video.elseif.se')
     ->port(22)
     ->stage('production')
     ->set('deploy_path', '/mnt/persist/www/docroot_vardagen')
-    ->user('root')
+    ->user('deploy')
     ->set('branch', 'master')
     ->identityFile('~/.ssh/id_rsa');
 
